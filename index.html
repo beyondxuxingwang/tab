@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background: #323232;
+            font-size: 12px ;
+            padding: 200px;
+        
+        }
+    </style>
+    <link rel="stylesheet" href="tab.css">
+</head>
+<body>
+    <div class="js-tab tab" data-config='{
+                                "triggerType":"click",
+                                "effect":"fade",
+                                "invoke":3,
+                                "auto": 1000
+                            }'
+    >
+        <ul class="tab-nav">
+            <li class="actived">
+                <a href="#">新闻</a>
+            </li>
+            <li>
+                <a href="#">娱乐</a>
+            </li>
+            <li>
+                <a href="#">电影</a>
+            </li>
+            <li>
+                <a href="#">科技</a>
+            </li>
+        </ul>
+        <div class="content-wrap">
+            <div class="content-item current">
+                <img src="http://imgsrc.baidu.com/image/c0%3Dshijue1%2C0%2C0%2C294%2C40/sign=daf79f3d6a59252db71a15475cf2694e/d52a2834349b033b58bb81fd1fce36d3d539bde1.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <img src="http://pic.58pic.com/58pic/14/78/41/77358PICZaq_1024.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <img src="http://up.enterdesk.com/edpic_source/f5/34/83/f53483429ccc69d00ae98dd5f05317a4.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <img src="http://pic.58pic.com/58pic/13/66/75/74858PIC6C2_1024.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="tab.js"></script>
+    <script>
+        $(function(){
+            // TAB 
+            // var tab1 = new Tab($(".js-tab").eq(0));
+            // Tab.init($(".js-tab"));
+
+            // 注册成jq方法
+            $(".js-tab").tab();
+
+            
+        });
+    </script>
+</body>
+</html>
